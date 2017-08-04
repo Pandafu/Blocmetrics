@@ -22,5 +22,24 @@ $navbar-default-bg: #5D6D7E;
   text-decoration: none;
 }
 
+.nav.navbar-nav li a {
+  color: white !important;
+}
+
+.nav.navbar-nav.navbar-right > li > a {
+  color: white !important;
+}
+
+/* need to work on this */
+.nav .navbar-nav a:hover {
+    color: black !important;
+}
+
+/* Dropdown menu background color*/
+.navbar-nav > li > .dropdown-menu { background-color: #5D6D7E; }
+/* Dropdown menu font color except it isn't working*/
+.navbar-nav > li > .dropdown-menu a:hover { color: #5D6D7E; }
+
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
