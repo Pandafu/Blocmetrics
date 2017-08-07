@@ -6,7 +6,10 @@ class RegisteredApplicationsController < ApplicationController
     @apps = RegisteredApplication.all
   end
 
-  #erased show and edit and put in before_action because it's already defined there.
+  def show
+    @registered_application = RegisteredApplication.find(params[:id])
+    @events = @registered_application.events.group_by(&:name)
+  end
 
   def new
     @app = RegisteredApplication.new

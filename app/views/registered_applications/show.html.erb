@@ -1,2 +1,18 @@
 <h1>RegisteredApplications#show</h1>
 <p>Find me in app/views/registered_applications/show.html.erb</p>
+<table>
+<thead>
+  <tr>
+    <th>Name</th>
+    <th><%= @registered_application.events.count %></th>
+  </tr>
+  </thead>
+
+    <tbody>
+      <% @registered_application.events.each do |event| %>
+        <tr>
+          <td><%= event.name %></td>
+      <% end %>
+        </tr>
+    </tbody>
+</table>
