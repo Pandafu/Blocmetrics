@@ -8,6 +8,7 @@ group :production do
   gem 'rails_12factor'
 end
 
+
 group :development do
   gem 'sqlite3'
   gem 'web-console', '~> 2.0'
@@ -21,6 +22,8 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'figaro'
 gem 'devise'
+gem 'chartkick'
+gem 'groupdate'
 
 group :development, :test do
   gem 'byebug'

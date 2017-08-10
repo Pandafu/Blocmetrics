@@ -1,20 +1,19 @@
-<h1>RegisteredApplications#index</h1>
-<p>Find me in app/views/registered_applications/index.html.erb</p>
-
-<table>
-  <thead>
-    <th>
-      Name
-    </th>
-  </thead>
-  <tbody>
-    <% @apps.each do |app| %>
-    <tr>
-      <td><%= link_to app.name, registered_application_path(app) %></td>
-      <td><%= app.url %></td>
-      <td><%= link_to 'Delete', app, method: :delete, data: {confirm: 'Are you sure?' } %></td>
-    </tr>
-     <% end %>
-  </tbody>
-</table>
-<br>
+<div class="">
+  <table align="center">
+    <thead>
+      <th>
+        Name
+      </th>
+    </thead>
+    <tbody>
+      <% @apps.each do |app| %>
+      <tr>
+        <td><%= link_to app.name, registered_application_path(app) %></td>
+        <td><%= app.url %></td>
+        <td><%= link_to 'Delete', app, method: :delete, data: {confirm: 'Are you sure?' } %></td>
+      </tr>
+       <% end %>
+    </tbody>
+  </table>
+  <br>
+</div>

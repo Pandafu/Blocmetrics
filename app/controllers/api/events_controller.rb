@@ -9,6 +9,7 @@ class API::EventsController < ApplicationController
     headers['Access-Control-Allow-Methods'] = 'POST, GET, OPTIONS'
     # allow the header Content-Type, which is used in HTTP requests to declare the type of the data being sent
     headers['Access-Control-Allow-Headers'] = 'Content-Type'
+    headers['Access-Control-Allow-Origin'] = '*'
   end
 
   skip_before_action :verify_authenticity_token

@@ -1,5 +1,4 @@
-<h1>RegisteredApplications#show</h1>
-<p>Find me in app/views/registered_applications/show.html.erb</p>
+
 <table>
 <thead>
   <tr>
@@ -16,3 +15,4 @@
         </tr>
     </tbody>
 </table>
+<%= pie_chart @registered_application.events.group(:name).count %>
